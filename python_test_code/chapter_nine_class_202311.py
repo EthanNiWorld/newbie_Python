@@ -14,3 +14,5 @@ class Dog:
 my_dog = Dog('ethan',5)     #根据类来创建东西叫做实例化instance.
 my_dog.sit() 
 my_dog.roll_over()   
+
+my_dog.sit() 
