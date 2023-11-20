@@ -11,15 +11,15 @@ class Alien(Sprite):
         self.settings = ai_game.settings
 
         #加载外星人图片
-        self.image = pygame.image.load('/Users/ethan/Downloads/hf_logo.png')
+        self.image = pygame.image.load('/Users/ethan/Desktop/newbie_Python/python_test_code/chapter_12_13_14_alien_invasion/resource/alien.bmp')
         self.rect = self.image.get_rect()
-        # Start each new alien at the center of the screen.
-        self.rect.x = self.screen.get_rect().centerx
-        self.rect.y = self.screen.get_rect().centery - 500
+        # Start each new alien at the left of the screen.
+        self.rect.x = self.rect.width
+        self.rect.y = self.rect.height
         #存储外星人的水平位置
         self.x = float(self.rect.x)
     
-    def check_edge(self):
+    def check_edges(self):
         screen_rect = self.screen.get_rect()
         return (self.rect.right >= screen_rect.right) or (self.rect.left <= 0)
 

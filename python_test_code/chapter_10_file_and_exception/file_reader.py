@@ -24,7 +24,7 @@ print(pi_string)
 
 path_new = Path('/Users/ethan/Desktop/newbie_Python/python_test_code/chapter_10_file_and_exception/division_calculator.py')
 contents_new = path_new.read_text()
-words = contents_new.split()  #生产一个列表，
+words = contents_new.split()  
 print(words)
 number_words = len(words)
 print(number_words)

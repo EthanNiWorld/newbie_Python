@@ -13,4 +13,3 @@ T_values = [abs(a-2)+abs(a-4)+abs(a-10) for a in a_values]
 min_T = min(T_values)
 print(min_T)
 
-print(5/0)

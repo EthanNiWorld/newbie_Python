@@ -11,6 +11,3 @@ content = json.dumps(numbers)
 path1.write_text(content)
 path.write_text(content)
 
-
-content1 = path1.read_text()
-print(content1)

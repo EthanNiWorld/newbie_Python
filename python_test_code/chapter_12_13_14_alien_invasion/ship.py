@@ -22,7 +22,7 @@ class Ship:
         self.moving_left = False
     def update(self):
         """根据移动标志更新飞船的位置"""
-        
+
         #更新飞船属性x值
         if self.moving_right and self.rect.right < self.screen_rect.right:      #如果右移,且飞船没有到达右边界
             self.x += self.settings.ship_speed
@@ -30,6 +30,11 @@ class Ship:
             self.x -= self.settings.ship_speed
         
         self.rect.x = self.x    
+
+    def center_ship(self):
+        """将飞船放在屏幕中心"""
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
 
     def blitme(self):
         #在指定的位置绘制飞船
